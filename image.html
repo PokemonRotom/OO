@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select a few images and check how much space they take and pay Excel</title>
+</head>
+<body>
+
+    <h1>Donate 5€ and unlock Excel</h1>
+
+    <!-- Tipka za plaćanje putem PayPal-a -->
+    <button onclick="initiatePayment()">Donate 5€ with PayPal</button>
+
+    <script>
+        function initiatePayment() {
+            // Prikazuje dijaloški okvir koji pita korisnika za potvrdu
+            if (confirm("Would you like to pay 5€ for our service?")) {
+                // Ako korisnik klikne "OK", preusmjerava ga na PayPal
+                window.location.href = "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=your-paypal-email@example.com&item_name=Usluga%205€&amount=5.00&currency_code=EUR&return=ono_posle_kupnje.html&cancel_return=ono_posle_kupnje.html";
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+<br>
+<br>
+<br>
+
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preusmjeri korisnika</title>
+    <style>
+        /* Stil za tekstualno polje (text box) sa svijetlozelenom pozadinom */
+        #numberInput {
+            background-color: #90EE90; /* Svijetlo zelena boja pozadine */
+            border: 2px solid #007bff; /* Plavi obrub */
+            color: #333; /* Tamno siva boja teksta */
+            font-size: 16px; /* Veličina fonta */
+            padding: 10px; /* Unutarnji razmak unutar tekstualnog polja */
+            border-radius: 5px; /* Zaobljeni kutovi */
+        }
+
+        /* Stil za tipku (button) */
+        button {
+            background-color: #28a745; /* Zeleni gumb */
+            color: white; /* Bijela boja teksta na gumbu */
+            padding: 10px 20px; /* Unutarnji razmak unutar gumba */
+            border: none;
+            border-radius: 5px; /* Zaobljeni kutovi gumba */
+            cursor: pointer; /* Pokazivač miša se mijenja u ruku pri prelasku preko gumba */
+        }
+
+        /* Stil za tipku pri hover efektu */
+        button:hover {
+            background-color: #218838; /* Tamnija zelena boja kad se prijeđe preko gumba */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>OR <br> Enter number with 4 numbers</h1>
+
+    <!-- Tekstualno polje (text box) za unos broja -->
+    <input type="text" id="numberInput" placeholder="ENTER NUMBER" required>
+
+    <!-- Tipka za potvrdu -->
+    <button onclick="checkNumber()">Confirm</button>
+
+    <script>
+        // Funkcija koja se poziva kada korisnik klikne na tipku
+        function checkNumber() {
+            // Dohvati uneseni broj iz input polja (tekstualni box)
+            var userInput = document.getElementById('numberInput').value;
+
+            // Provjeri je li uneseni broj točan
+            if (userInput === "1032") {
+                // Ako je broj ispravan, preusmjeravamo korisnika
+                window.location.href = "ono_posle_kupnje.html"; // Zamijeni s URL-om na koji želiš preusmjeriti korisnika
+            } else {
+                // Ako broj nije točan, prikaži obavijest
+                alert("Number Incorrect");
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor with Formatting, Copy/Delete, and Backspace</title>
+    
+    <!-- Stilovi za izgled -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #toolbar {
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-bottom: 2px solid #ccc;
+            display: flex;
+            gap: 10px;
+        }
+
+        #editor {
+            width: 100%;
+            min-height: 300px;
+            border: 2px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 16px;
+            background-color: #fff;
+        }
+
+        button {
+            padding: 10px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+
+
+<p> Luka Risek © (Me, Website Creator) </p>
+
+  <!-- Pravokutnik sa iframe -->
+  <style>
+    #iframe-container iframe {
+      width: 100%; /* Ili postavi specifičnu širinu kao što je 800px */
+      height: 500px; /* Možeš podesiti visinu prema potrebi */
+    }
+  </style>
+  
+  <div id="iframe-container">
+    <iframe src="a.html"></iframe>
+  </div>
+
+
+
+
+ 
+  
+
+</body></html>
